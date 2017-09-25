@@ -1,0 +1,30 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="knowledge-kits-travel" audience="service" href="/docs/services/knowledge-kits/index.html"}
+Knowledge Kits
+
+    {: .navgroup id="learn"}
+    index.md
+    learn/overview.md
+    {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    howto/updating-your-plan.md
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    [API reference](https://dev-console.stage1.bluemix.net/apidocs/1461-watson-content-travel-knowledge-kit)
+    reference/using-rest-api.md
+
+    {: .topicgroup}
+    Sample apps
+        [Demo: Watson Travel Companion](http://knowledge-kits.blekko.com/travelkit)
+    {: .navgroup-end}
+
+    {: .navgroup id="help"}
+    help/support.md
+    help/faq.md
+    help/whats-new.md
+    help/release-notes.md
+    {: .navgroup-end}

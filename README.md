@@ -1,1 +1,1 @@
-# knowledge-kits
+Knowledge Kits documentation markdown for Bluemix Docs
