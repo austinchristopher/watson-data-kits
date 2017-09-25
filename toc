@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="knowledge-kits-travel" audience="service" href="/docs/services/knowledge-kits/index.html"}
+{: .toc subcollection="knowledge-kits" audience="service" href="/docs/services/knowledge-kits/index.html"}
 Knowledge Kits
 
     {: .navgroup id="learn"}
@@ -10,6 +10,7 @@ Knowledge Kits
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    howto/pricing-model.md
     howto/updating-your-plan.md
     {: .navgroup-end}
 
