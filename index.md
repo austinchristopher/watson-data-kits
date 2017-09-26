@@ -199,4 +199,4 @@ The service returns a JSON response that includes information about travel attra
 
 ## Next steps
 
--   Interact with the API in the [API explorer ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://dev-console.stage1.bluemix.net/apidocs/1444-watson-content-travel-knowledge-kit){: new_window}. -->
+-   Interact with the API in the [API explorer ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://dev-console.stage1.bluemix.net/apidocs/1461-watson-content-travel-knowledge-kit){: new_window}.

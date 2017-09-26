@@ -10,7 +10,6 @@ Knowledge Kits
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    howto/pricing-model.md
     howto/updating-your-plan.md
     {: .navgroup-end}
 
@@ -26,6 +25,5 @@ Knowledge Kits
     {: .navgroup id="help"}
     help/support.md
     help/faq.md
-    help/whats-new.md
     help/release-notes.md
     {: .navgroup-end}
