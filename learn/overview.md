@@ -18,8 +18,12 @@ lastupdated: "2017-09-15"
 {:swift: .ph data-hd-programlang='swift'}
 
 # Overview
+{{site.data.keyword.knowledgekits_full_notm}} will enable developers to quickly infuse cognitive capabilities into their apps without spending too much time acquiring, cleansing, and training content. 
 
-The Travel Knowledge Kit service provides an application programming interface (API) that enables developers to leverage structured data on common travel attractions around the world to offer more meaningful choices in the context of an application. This API can be used foundationally, as the core of a new application, or to augment the offering of an existing application. 
+The aim of this service is to make it easier to build cognitive apps through {{site.data.keyword.knowledgekits_short}} – pretrained content from different industries and domains offered as API’s for easy integration into a cognitive solution.
+{: shortdesc}
 
-The Travel Knowledge Kit service can also be used to support cognitive systems and train models to build more robust services and platforms. 
+
+## The Travel Knowledge Kit
+The Travel Knowledge Kit provides an application programming interface (API) that enables developers to leverage structured data on common travel attractions around the world to offer more meaningful choices in the context of an application. This API can be used foundationally, as the core of a new application, or to augment the offering of an existing application. 
 {: shortdesc}

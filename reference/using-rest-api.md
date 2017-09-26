@@ -17,9 +17,12 @@ lastupdated: "2017-09-15"
 {:python: .ph data-hd-programlang='python'}
 {:swift: .ph data-hd-programlang='swift'}
 
-# Using the Travel Knowledge Kit REST API
+# Using the REST API's
 {: #rest_api}
-A [OpenAPI Specification 2.0 (formerly, Swagger 2.0)](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md) compliant REST API is available and can be used to retrieve travel data. You can use the [API Documentation](https://dev-console.stage1.bluemix.net/apidocs/1444-watson-content-travel-knowledge-kit){:new_window} to test API operations and instantly view the results to help you build your applications faster.
+
+A [OpenAPI Specification 2.0 (formerly, Swagger 2.0)](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md) compliant REST API is available and can be used to retrieve relevant Knowledge Kit data. 
+
+You can use the [API Documentation](https://dev-console.stage1.bluemix.net/apidocs/1461-watson-content-travel-knowledge-kit){:new_window} to test API operations specifically for the Travel Knowledge Kit and instantly view the results to help you build your applications faster.
 {: shortdesc}
 
 
