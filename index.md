@@ -26,7 +26,7 @@ The {{site.data.keyword.IBM}} Travel Knowledge Kit service provides information 
 {: #prereqs}
 You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) and an instance of the Travel Knowlege Kits service.
 
-1.  Go to the [Watson Content Knowledge Kits![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.stage1.bluemix.net/catalog/services/watson-content-knowledge-kits){: new_window} and either sign up for a free Bluemix account or log in.
+1.  Go to the [Watson Content Knowledge Kits ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.stage1.bluemix.net/catalog/services/watson-content-knowledge-kits){: new_window} and either sign up for a free Bluemix account or log in.
 2.  After you login in, Click **Create** and you will be taken to the dashboard page for this service instance.
 
 

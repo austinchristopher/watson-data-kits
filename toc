@@ -14,7 +14,7 @@ Knowledge Kits
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [API reference](https://dev-console.stage1.bluemix.net/apidocs/1461-watson-content-travel-knowledge-kit)
+    [API reference](https://console.stage1.bluemix.net/apidocs/1461-watson-content-travel-knowledge-kit)
     reference/using-rest-api.md
 
     {: .topicgroup}
