@@ -20,7 +20,7 @@ lastupdated: "2017-09-15"
 # Getting started tutorial
 The {{site.data.keyword.IBM}} {{site.data.keyword.knowledgekits_full}} are the individual building blocks that can be used to build applications based on parsed and annotated content from the {{site.data.keyword.watsoncontent_short}} team.
 
-The first kit that we have made available for you to start with is the {{site.data.keyword.watsoncontent_full}} Travel Knowledge Kit. This service provides information on points of interest and attractions based on location input. 
+The first kit that we have made available for you to start with is the Travel Knowledge Kit. This service provides information on points of interest and attractions based on location input. 
 
 The following tutorial will help show how you can get started quickly with the service. The example below shows how to call the service's GET method on different endpoints with parameters of your choice.
 {: shortdesc}
