@@ -26,7 +26,7 @@ A [OpenAPI Specification 2.0 (formerly, Swagger 2.0)](https://github.com/OAI/Ope
 ## Handling missing data fields in the API response
 {: #handling_missing}
 
-If data for any field is not available, it's value will be an empty string, ```""```. The REST API will return the appropriate fields available to all collections consistently, despite whether data for a field is missing or not.
+If data for any field is not available, its value will be an empty string, ```""```. The REST API will return the appropriate fields available to all collections consistently, despite whether data for a field is missing or not.
 
 
 ## Handling errors
