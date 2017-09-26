@@ -18,13 +18,17 @@ lastupdated: "2017-09-15"
 {:swift: .ph data-hd-programlang='swift'}
 
 # Getting started tutorial
-The {{site.data.keyword.IBM}} Travel Knowledge Kit service provides information on points of interest and attractions based on location input. This tutorial can help you get started quickly with the service. The example below shows how to call the service's GET method with different parameters.
+The {{site.data.keyword.IBM}} {{site.data.keyword.knowledgekits_full}} are the individual building blocks that can be used to build applications based on parsed and annotated content from the {{site.data.keyword.watsoncontent_short}} team.
+
+The first kit that we have made available for you to start with is the {{site.data.keyword.watsoncontent_full}} Travel Knowledge Kit. This service provides information on points of interest and attractions based on location input. 
+
+The following tutorial will help show how you can get started quickly with the service. The example below shows how to call the service's GET method on different endpoints with parameters of your choice.
 {: shortdesc}
 
 
 ## Before you begin
 {: #prereqs}
-You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) and an instance of the Travel Knowlege Kits service.
+You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) and an instance of the {{site.data.keyword.knowledgekits_full_notm}} service.
 
 1.  Go to the [Watson Content Knowledge Kits ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.stage1.bluemix.net/catalog/services/watson-content-knowledge-kits){: new_window} and either sign up for a free Bluemix account or log in.
 2.  After you login in, Click **Create** and you will be taken to the dashboard page for this service instance.
@@ -36,7 +40,7 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
 ## Step 1: Request the default JSON response for any provided location.
 {: #step-1}
 
-1. Find a pair of Latitude and Longitude coordinates (in Decimal Degrees) of any location you would like to test. Below are Latitude and Longitude values for San Francisco for your convenience. 
+1. Find a pair of `latitude` and `longitude` coordinates (in Decimal Degrees) of any location you would like to test. Below are `latitude` and `longitude values for San Francisco for your convenience. 
 
     ```javascript
     { 
@@ -199,4 +203,4 @@ The service returns a JSON response that includes information about travel attra
 
 ## Next steps
 
--   Interact with the API in the [API explorer ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://dev-console.stage1.bluemix.net/apidocs/1461-watson-content-travel-knowledge-kit){: new_window}.
+-   Interact with the API in the [API explorer ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.stage1.bluemix.net/apidocs/1461-watson-content-travel-knowledge-kit){: new_window}.
