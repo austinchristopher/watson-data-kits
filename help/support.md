@@ -34,4 +34,6 @@ To get access to the new enterprise Slack:
 
 If you experience issues with the service or getting started instructions, you can get help by searching for information or by asking a question in our [IBM developerWorks Answers forum](https://developer.ibm.com/answers/topics/travel-knowledge-kit/?smartspace=bluemix){:new_window}. 
 
-When you use the forums to ask a question, tag your question so that it is seen by the {{site.data.keyword.Bluemix_notm}} development teams. Include the **bluemix** and **travel-knowledge-kit** tags.
+When you use the forums to ask a question, tag your question so that it is seen by the {{site.data.keyword.Bluemix_notm}} development teams. Include the **bluemix** and **knowledge-kits** tags.
+
+If you have questions specific to Travel Knowledge Kit, please tag your question with **travel-knowledge-kit**.
