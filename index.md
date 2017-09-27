@@ -49,9 +49,6 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
     }
     ```
     {: codeblock}
-
-
-
 2. Issue the following command to request the default JSON response. The `charset` parameter included with the `Content-Type` header specifies the character encoding of the input text.
     -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1 above).
 
@@ -106,16 +103,12 @@ The service returns a JSON response that includes information about travel attra
 {: #step-2}
 
 1. Issue the following command to request a JSON response of the available categories.
-
     ```bash
       curl -X GET --header "Content-Type: application/json" \
       'http://knowledge-kits-api.blekko.com/travel/categories'
     ```
     {: pre}
-
 The service returns a JSON response that includes information about travel categories available and how frequently each appears in the database.
-
-
 ```javascript
 {
     "Museum": 53872,
@@ -142,14 +135,7 @@ The service returns a JSON response that includes information about travel categ
 }
 ```
 {: codeblock}
-
-
-
-
 2. From the JSON response above, select any category that you would like to use as a query parameter. Take note of this category so that you can use it for the next step.
-
-
-
 3. Issue the following command to request a JSON response of attractions near a location, filtered by a category of your choosing. 
     -   Replace {category_keyword} with the category you selected in step #2.2.
     -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1 above).
