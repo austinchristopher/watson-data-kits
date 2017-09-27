@@ -31,7 +31,7 @@ The following tutorial will help show how you can get started quickly with the s
 You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) and an instance of the {{site.data.keyword.knowledgekits_full_notm}} service.
 
 1.  Go to the [Watson Content Knowledge Kits ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.stage1.bluemix.net/catalog/services/watson-content-knowledge-kits){: new_window} and either sign up for a free Bluemix account or log in.
-1.  After you login in, Click **Create** and you will be taken to the dashboard page for this service instance.
+1.  After you login in, click **Create** and you will be taken to the dashboard page for this service instance.
 
 
 **Note**: The examples below use cURL to call methods of the HTTP interface. You can install the version of cURL for your operating system from [curl.haxx.se ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://curl.haxx.se/){: new_window}. You must install the version that supports the Secure Sockets Layer (SSL) protocol. Make sure to include the installed binary file on your `PATH` environment variable.
@@ -54,7 +54,7 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
     -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1 above).
 
     ```bash
-    curl -X GET --header "Accept: application/json" "http://knowledge-kits-api.blekko.com/travel/attractions?location={latitude},{longitude}"
+    curl -X GET --header "Accept: application/json" "http://173.193.106.27:31000/attractions?location={latitude},{longitude}"
     ```
     {: pre}
 
@@ -100,7 +100,7 @@ The service returns a JSON response that includes information about travel attra
 1. Issue the following command to request a JSON response of the available categories.
 
     ```bash
-    curl -X GET --header "Accept: application/json" "http://knowledge-kits-api.blekko.com/travel/categories"
+    curl -X GET --header "Accept: application/json" "http://173.193.106.27:31000/categories"
     ```
     {: pre}
 
@@ -140,7 +140,7 @@ The service returns a JSON response that includes information about travel categ
     -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1 above).
 
     ```bash
-    curl -X GET --header "Accept: application/json" "http://knowledge-kits-api.blekko.com/travel/attractions?location={latitude},{longitude}&category_keyword={category_keyword"
+    curl -X GET --header "Accept: application/json" "http://173.193.106.27:31000/attractions?location={latitude},{longitude}&category_keyword={category_keyword}"
     ```
     {: pre}
 
