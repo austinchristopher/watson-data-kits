@@ -40,7 +40,7 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
 ## Step 1: Request the default JSON response for any provided location.
 {: #step-1}
 
-1. Find a pair of `latitude` and `longitude` coordinates (in Decimal Degrees) of any location you would like to test. Below are `latitude` and `longitude values for San Francisco for your convenience. 
+1. Find a pair of `latitude` and `longitude` coordinates (in Decimal Degrees) of any location you would like to test. Below are `latitude` and `longitude` values for San Francisco for your convenience. 
 
     ```javascript
     { 
@@ -187,6 +187,6 @@ The service returns a JSON response that includes information about travel attra
 ```
 {: codeblock}
 
-## Next steps
+<!-- ## Next steps -->
 
--   Interact with the API in the [API explorer ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.stage1.bluemix.net/apidocs/1461-watson-content-travel-knowledge-kit){: new_window}.
+<!-- -   Interact with the API in the [API explorer ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.stage1.bluemix.net/apidocs/1461-watson-content-travel-knowledge-kit){: new_window}. -->
