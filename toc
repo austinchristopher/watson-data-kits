@@ -15,6 +15,7 @@ Knowledge Kits
 
     {: .navgroup id="reference"}
     reference/using-rest-api.md
+    {: .navgroup-end}
 
     {: .navgroup id="help"}
     help/support.md
