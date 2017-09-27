@@ -31,7 +31,7 @@ The following tutorial will help show how you can get started quickly with the s
 You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) and an instance of the {{site.data.keyword.knowledgekits_full_notm}} service.
 
 1.  Go to the [Watson Content Knowledge Kits ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.stage1.bluemix.net/catalog/services/watson-content-knowledge-kits){: new_window} and either sign up for a free Bluemix account or log in.
-2.  After you login in, Click **Create** and you will be taken to the dashboard page for this service instance.
+1.  After you login in, Click **Create** and you will be taken to the dashboard page for this service instance.
 
 
 **Note**: The examples below use cURL to call methods of the HTTP interface. You can install the version of cURL for your operating system from [curl.haxx.se ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://curl.haxx.se/){: new_window}. You must install the version that supports the Secure Sockets Layer (SSL) protocol. Make sure to include the installed binary file on your `PATH` environment variable.
@@ -42,6 +42,7 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
 
 1. Find a pair of `latitude` and `longitude` coordinates (in Decimal Degrees) of any location you would like to test. Below are `latitude` and `longitude values for San Francisco for your convenience. 
 
+
     ```javascript
     { 
         "latitude": 37.7792808,
@@ -49,17 +50,19 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
     }
     ```
     {: codeblock}
-2. Issue the following command to request the default JSON response. The `charset` parameter included with the `Content-Type` header specifies the character encoding of the input text.
+
+2. Issue the following command to request the default JSON response. The  `Accept` header specifies acceptable meadia types for the response.
     -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1 above).
 
+
     ```bash
-    curl -X GET --header "Content-Type: application/json" \
-    'http://knowledge-kits-api.blekko.com/travel/attractions?location={latitude},{longitude}'
+    curl -X GET \
+    --header "Accept: application/json" \
+    "http://knowledge-kits-api.blekko.com/travel/attractions?location={latitude},{longitude}"
     ```
     {: pre}
 
 The service returns a JSON response that includes information about travel attractions found near the location input that was entered. Below is an example response using the San Francisco gps coordinates provided above:
-
 
 
 ```javascript
@@ -96,19 +99,22 @@ The service returns a JSON response that includes information about travel attra
 ```
 {: codeblock}
 
-
-
-
 ## Step 2: Request a JSON response after finding and specifying a category.
 {: #step-2}
 
 1. Issue the following command to request a JSON response of the available categories.
+
+
     ```bash
-    curl -X GET --header "Content-Type: application/json" \
-    'http://knowledge-kits-api.blekko.com/travel/categories'
+    curl -X GET \
+    --header "Accept: application/json" \
+    "http://knowledge-kits-api.blekko.com/travel/categories"
     ```
     {: pre}
+
 The service returns a JSON response that includes information about travel categories available and how frequently each appears in the database.
+
+
 ```javascript
 {
     "Museum": 53872,
@@ -135,19 +141,22 @@ The service returns a JSON response that includes information about travel categ
 }
 ```
 {: codeblock}
-2. From the JSON response above, select any category that you would like to use as a query parameter. Take note of this category so that you can use it for the next step.
-3. Issue the following command to request a JSON response of attractions near a location, filtered by a category of your choosing. 
+
+1. From the JSON response above, select any category that you would like to use as a query parameter. Take note of this category so that you can use it for the next step.
+
+1. Issue the following command to request a JSON response of attractions near a location, filtered by a category of your choosing. 
     -   Replace {category_keyword} with the category you selected in step #2.2.
     -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1 above).
 
+
     ```bash
-    curl -X GET --header "Content-Type: application/json" \
-    'http://knowledge-kits-api.blekko.com/travel/attractions?location={latitude},{longitude}&category_keyword={category_keyword}'
+    curl -X GET \
+    --header "Accept: application/json" \
+    "http://knowledge-kits-api.blekko.com/travel/attractions?location={latitude},{longitude}&category_keyword={category_keyword}"
     ```
     {: pre}
 
 The service returns a JSON response that includes information about travel attractions found near the location input that was entered, filtered according to the category provided. Below is an example response using "memorial" as {category_keyword}.
-
 
 
 ```javascript
@@ -184,8 +193,6 @@ The service returns a JSON response that includes information about travel attra
 ]
 ```
 {: codeblock}
-
-
 
 ## Next steps
 
