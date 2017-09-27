@@ -53,8 +53,8 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
     -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1 above).
 
     ```bash
-      curl -X GET --header "Content-Type: application/json" \
-      'http://knowledge-kits-api.blekko.com/travel/attractions?location={latitude},{longitude}'
+    curl -X GET --header "Content-Type: application/json" \
+    'http://knowledge-kits-api.blekko.com/travel/attractions?location={latitude},{longitude}'
     ```
     {: pre}
 
@@ -104,8 +104,8 @@ The service returns a JSON response that includes information about travel attra
 
 1. Issue the following command to request a JSON response of the available categories.
     ```bash
-      curl -X GET --header "Content-Type: application/json" \
-      'http://knowledge-kits-api.blekko.com/travel/categories'
+    curl -X GET --header "Content-Type: application/json" \
+    'http://knowledge-kits-api.blekko.com/travel/categories'
     ```
     {: pre}
 The service returns a JSON response that includes information about travel categories available and how frequently each appears in the database.
@@ -141,8 +141,8 @@ The service returns a JSON response that includes information about travel categ
     -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1 above).
 
     ```bash
-      curl -X GET --header "Content-Type: application/json" \
-      'http://knowledge-kits-api.blekko.com/travel/attractions?location={latitude},{longitude}&category_keyword={category_keyword}'
+    curl -X GET --header "Content-Type: application/json" \
+    'http://knowledge-kits-api.blekko.com/travel/attractions?location={latitude},{longitude}&category_keyword={category_keyword}'
     ```
     {: pre}
 
