@@ -55,8 +55,8 @@ Once deployed, the live docs can be found here:
 #### Resources
 For much more in depth documentation on creating Bluemix Documentation, including different levels of compliance required for different levels  of release, please visit: [https://dev-console.stage1.bluemix.net/docs/developing/writing/index.html#get-started](https://dev-console.stage1.bluemix.net/docs/developing/writing/index.html#get-started)
 
-For more on `marked-it-cli` installation and usage see: [https://console.stage1.bluemix.net/docs/developing/markdown/setup.html#set-up-your-markdown-environment](https://console.stage1.bluemix.net/docs/developing/markdown/setup.html#set-up-your-markdown-environment) 
+For more on `marked-it-cli` installation and usage see: https://console.stage1.bluemix.net/docs/developing/markdown/setup.html#set-up-your-markdown-environment
 
-For specifc Markdown requirements, see: [https://dev-console.stage1.bluemix.net/docs/developing/markdown/create.html#validmarkdown](https://dev-console.stage1.bluemix.net/docs/developing/markdown/create.html#validmarkdown)
+For specifc Markdown requirements, see: https://dev-console.stage1.bluemix.net/docs/developing/markdown/create.html#validmarkdown
 
 
