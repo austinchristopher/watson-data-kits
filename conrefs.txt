@@ -1,0 +1,24 @@
+#IBM®
+{{site.data.keyword.IBM}}
+#IBM
+{{site.data.keyword.IBM_notm}}
+#IBM® Bluemix®
+{{site.data.keyword.Bluemix}}
+#Bluemix®
+{{site.data.keyword.Bluemix_short}}
+#Bluemix
+{{site.data.keyword.Bluemix_notm}}
+#IBM Watson® Content
+{{site.data.keyword.watsoncontent_full}}
+#IBM Watson Content
+{{site.data.keyword.watsoncontent_full_notm}}
+#Watson® Content
+{{site.data.keyword.watsoncontent_short}}
+#Watson Content
+{{site.data.keyword.watsoncontent_short_notm}}
+#Watson® Content Knowledge Kits
+{{site.data.keyword.knowledgekits_full}}
+#Watson Content Knowledge Kits
+{{site.data.keyword.knowledgekits_full_notm}}
+#Knowledge Kits
+{{site.data.keyword.knowledgekits_short}}

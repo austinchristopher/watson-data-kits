@@ -1,0 +1,24 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="knowledge-kits" audience="service" href="/docs/services/knowledge-kits/index.html"}
+Knowledge Kits
+
+    {: .navgroup id="learn"}
+    index.md
+    learn/overview.md
+    {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    howto/updating-your-plan.md
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    reference/using-rest-api.md
+    {: .navgroup-end}
+
+    {: .navgroup id="help"}
+    help/support.md
+    help/faq.md
+    help/release-notes.md
+    {: .navgroup-end}
