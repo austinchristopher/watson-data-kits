@@ -1,4 +1,4 @@
-### Watson Content Knowledge Kits markdown for Bluemix Docs
+### Bluemix Docs for Knowledge Kits
 
 #### Development
 The documentation building process at its core relies on a Markdown-to-HTML generator used by Bluemix based on npm package called [marked-it-cli](https://www.npmjs.com/package/marked-it-cli) and Bluemix-specific extensions to that package. 
