@@ -52,7 +52,7 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
 
 1. Issue the following command to request the default JSON response. The  `Accept` header specifies acceptable meadia types for the response.
     -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1 above).
-
+  
     ```bash
     curl -X GET \
     --header "Accept: application/json" \
@@ -60,7 +60,7 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
     ```
     {: pre}
 
-The service returns a JSON response that includes information about travel attractions found near the location input that was entered. Below is an example response using the San Francisco gps coordinates provided above:
+  The service returns a JSON response that includes information about travel attractions found near the location input that was entered. Below is an example response using the San Francisco gps coordinates provided above:
 
 ```javascript
 [
@@ -150,7 +150,7 @@ The service returns a JSON response that includes information about travel attra
     ```
     {: pre}
 
-      The service returns a JSON response that includes information about travel attractions found near the location input that was entered, filtered according to the category provided. Below is an example response using "memorial" as {category_keyword}.
+  The service returns a JSON response that includes information about travel attractions found near the location input that was entered, filtered according to the category provided. Below is an example response using "memorial" as {category_keyword}.
 
       ```javascript
       [
