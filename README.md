@@ -37,7 +37,7 @@ marked-it-cli . \
 
 
 
-####Deployment
+#### Deployment
 To be able to push up to this repository connected to Bluemix stage or prod, you have to get permission by opening a build request. This build request for this repo has already been opened in the [Bluemix/Documentation-content repo](https://github.ibm.com/Bluemix/Documentation-content/issues/1073). Request permission in that issue if necessary.
 
 Once you have read/write permission, you can deploy through this repo. Merging anything into the `staging` branch will trigger a build for your documentation on console.stage1.bluemix.net and merging anything into `master` will trigger a build on console.bluemix.net.
@@ -52,7 +52,7 @@ Once deployed, the live docs can be found here:
 
 
 
-####Resources
+#### Resources
 For much more in depth documentation on creating Bluemix Documentation, including different levels of compliance required for different levels  of release, please visit: [https://dev-console.stage1.bluemix.net/docs/developing/writing/index.html#get-started](https://dev-console.stage1.bluemix.net/docs/developing/writing/index.html#get-started)
 
 For more on `marked-it-cli` installation and usage see: [https://console.stage1.bluemix.net/docs/developing/markdown/setup.html#set-up-your-markdown-environment](https://console.stage1.bluemix.net/docs/developing/markdown/setup.html#set-up-your-markdown-environment) 
