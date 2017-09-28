@@ -54,7 +54,9 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
     -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1 above).
 
     ```bash
-    curl -X GET --header "Accept: application/json" "http://173.193.106.27:31000/attractions?location={latitude},{longitude}"
+    curl -X GET \
+    --header "Accept: application/json" \
+    "http://173.193.106.27:31000/attractions?location={latitude},{longitude}"
     ```
     {: pre}
 
@@ -100,38 +102,40 @@ The service returns a JSON response that includes information about travel attra
 1. Issue the following command to request a JSON response of the available categories.
 
     ```bash
-    curl -X GET --header "Accept: application/json" "http://173.193.106.27:31000/categories"
+    curl -X GET \
+    --header "Accept: application/json" \
+    "http://173.193.106.27:31000/categories"
     ```
     {: pre}
 
-The service returns a JSON response that includes information about travel categories available and how frequently each appears in the database.
+      The service returns a JSON response that includes information about travel categories available and how frequently each appears in the database.
 
-```javascript
-{
-    "Museum": 53872,
-    "Park": 34623,
-    "Church": 25515,
-    "Nature/Wildlife": 23060,
-    "Mountain": 10209,
-    "Bridge/Tunnel": 9421,
-    "Memorial": 9343,
-    "Fort": 6475,
-    "Museum/Gallery": 6033,
-    "Castle": 5963,
-    "Library": 5877,
-    "University": 5063,
-    "Family": 4327,
-    "Temple": 4287,
-    "Lake": 3985,
-    "Beach": 3760,
-    "Market": 3297,
-    "History Museum": 3286,
-    "Square": 3130,
-    "Religious": 3018,
-    . . .
-}
-```
-{: codeblock}
+      ```javascript
+      {
+        "Museum": 53872,
+        "Park": 34623,
+        "Church": 25515,
+        "Nature/Wildlife": 23060,
+        "Mountain": 10209,
+        "Bridge/Tunnel": 9421,
+        "Memorial": 9343,
+        "Fort": 6475,
+        "Museum/Gallery": 6033,
+        "Castle": 5963,
+        "Library": 5877,
+        "University": 5063,
+        "Family": 4327,
+        "Temple": 4287,
+        "Lake": 3985,
+        "Beach": 3760,
+        "Market": 3297,
+        "History Museum": 3286,
+        "Square": 3130,
+        "Religious": 3018,
+        . . .
+      }
+      ```
+      {: codeblock}
 
 1. From the JSON response above, select any category that you would like to use as a query parameter. Take note of this category so that you can use it for the next step.
 
@@ -140,46 +144,48 @@ The service returns a JSON response that includes information about travel categ
     -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1 above).
 
     ```bash
-    curl -X GET --header "Accept: application/json" "http://173.193.106.27:31000/attractions?location={latitude},{longitude}&category_keyword={category_keyword}"
+    curl -X GET \
+    --header "Accept: application/json" \
+    "http://173.193.106.27:31000/attractions?location={latitude},{longitude}&category_keyword={category_keyword}"
     ```
     {: pre}
 
-The service returns a JSON response that includes information about travel attractions found near the location input that was entered, filtered according to the category provided. Below is an example response using "memorial" as {category_keyword}.
+      The service returns a JSON response that includes information about travel attractions found near the location input that was entered, filtered according to the category provided. Below is an example response using "memorial" as {category_keyword}.
 
-```javascript
-[
- {
-    "address:" {
-        "address_string": "100 Larkin St, San Francisco, CA 94102, USA",
-        "street_number": "100",
-        "county": "San Francisco County",
-        "street": "Larkin Street",
-        "postcode": "94102",
-        "city": "San Francisco",
-        "country": "United States",
-        "state": "California"
-    },
-    "categories": [
-        "Statue"
-    ],
-    "description": "Double L Excentric Gyratory is a sculpture by American artist George Rickey. There are three editions. One is installed at the intersection of Larking and Fulton streets, outside the Main Library, in San Francisco's Civic Center, in the U.S. state of California. Another is part of the Auckland Art Gallery's International Art Collection. This stainless steel sculpture, dated 1985, measures 7163 x 3543 mm and was gifted by the Edmiston Trust.",
-    "distance_miles": 0.1,
-    "id": "e6c20243-344d-4ceb-b155-82767df62648",
-    "location": {
-        "lat": 37.7793110683296,
-        "lng": -122.415905136432
-    },
-    "name": "Double L Excentric Gyratory",
-    "phone": "",
-    "rank": 199.638437974817,
-    "url": "",
-    "image_url: https://upload.wikimedia.org/wikipedia/commons/e/ed/Double_L_Excentric_Gyratory_by_George_Rickey%2C_San_Francisco_%282013%29_-_1.JPG",
-    "grouping": "Monument"
- },
-    . . .
-]
-```
-{: codeblock}
+      ```javascript
+      [
+       {
+          "address:" {
+              "address_string": "100 Larkin St, San Francisco, CA 94102, USA",
+              "street_number": "100",
+              "county": "San Francisco County",
+              "street": "Larkin Street",
+              "postcode": "94102",
+              "city": "San Francisco",
+              "country": "United States",
+              "state": "California"
+          },
+          "categories": [
+              "Statue"
+          ],
+          "description": "Double L Excentric Gyratory is a sculpture by American artist George Rickey. There are three editions. One is installed at the intersection of Larking and Fulton streets, outside the Main Library, in San Francisco's Civic Center, in the U.S. state of California. Another is part of the Auckland Art Gallery's International Art Collection. This stainless steel sculpture, dated 1985, measures 7163 x 3543 mm and was gifted by the Edmiston Trust.",
+          "distance_miles": 0.1,
+          "id": "e6c20243-344d-4ceb-b155-82767df62648",
+          "location": {
+              "lat": 37.7793110683296,
+              "lng": -122.415905136432
+          },
+          "name": "Double L Excentric Gyratory",
+          "phone": "",
+          "rank": 199.638437974817,
+          "url": "",
+          "image_url: https://upload.wikimedia.org/wikipedia/commons/e/ed/Double_L_Excentric_Gyratory_by_George_Rickey%2C_San_Francisco_%282013%29_-_1.JPG",
+          "grouping": "Monument"
+       },
+          . . .
+      ]
+      ```
+      {: codeblock}
 
 <!-- ## Next steps -->
 
