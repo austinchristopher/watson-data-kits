@@ -40,7 +40,7 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
 ## Step 1: Request the default JSON response for any provided location.
 {: #step-1}
 
-1. Find a pair of `latitude` and `longitude` coordinates (in Decimal Degrees) of any location you would like to test. Below are `latitude` and `longitude` values for San Francisco for your convenience. 
+1.  Find a pair of `latitude` and `longitude` coordinates (in Decimal Degrees) of any location you would like to test. Below are `latitude` and `longitude` values for San Francisco for your convenience. 
 
     ```javascript
     { 
@@ -50,7 +50,7 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
     ```
     {: codeblock}
 
-1. Issue the following command to request the default JSON response. The  `Accept` header specifies acceptable meadia types for the response.
+1.  Issue the following command to request the default JSON response. The  `Accept` header specifies acceptable meadia types for the response.
     -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1 above).
   
     ```bash
@@ -60,7 +60,7 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
     ```
     {: pre}
 
-  The service returns a JSON response that includes information about travel attractions found near the location input that was entered. Below is an example response using the San Francisco gps coordinates provided above:
+The service returns a JSON response that includes information about travel attractions found near the location input that was entered. Below is an example response using the San Francisco gps coordinates provided above:
 
 ```javascript
 [
@@ -99,7 +99,7 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
 ## Step 2: Request a JSON response after finding and specifying a category.
 {: #step-2}
 
-1. Issue the following command to request a JSON response of the available categories.
+1.  Issue the following command to request a JSON response of the available categories.
 
     ```bash
     curl -X GET \
@@ -137,9 +137,9 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
       ```
       {: codeblock}
 
-1. From the JSON response above, select any category that you would like to use as a query parameter. Take note of this category so that you can use it for the next step.
+1.  From the JSON response above, select any category that you would like to use as a query parameter. Take note of this category so that you can use it for the next step.
 
-1. Issue the following command to request a JSON response of attractions near a location, filtered by a category of your choosing. 
+1.  Issue the following command to request a JSON response of attractions near a location, filtered by a category of your choosing. 
     -   Replace {category_keyword} with the category you selected in step #2.2.
     -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1 above).
 
