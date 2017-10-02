@@ -53,10 +53,12 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
 1.  Issue the following command to request the default JSON response. The  `Accept` header specifies acceptable meadia types for the response.
   -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1 above).
   
-    ```bash
-    curl -X GET --header "Accept: application/json" "http://173.193.106.27:31000/attractions?location={latitude},{longitude}"
-    ```
-    {: pre}
+  ```bash
+  curl -X GET --header \
+  "Accept: application/json" \
+  "http://173.193.106.27:31000/attractions?location={latitude},{longitude}"
+  ```
+  {: pre}
 
 The service returns a JSON response that includes information about travel attractions found near the location input that was entered. Below is an example response using the San Francisco gps coordinates provided above:
 
@@ -99,41 +101,41 @@ The service returns a JSON response that includes information about travel attra
 
 1.  Issue the following command to request a JSON response of the available categories.
 
-    ```bash
-    curl -X GET \
-    --header "Accept: application/json" \
-    "http://173.193.106.27:31000/categories"
-    ```
-    {: pre}
+  ```bash
+  curl -X GET \
+  --header "Accept: application/json" \
+  "http://173.193.106.27:31000/categories"
+  ```
+  {: pre}
 
-      The service returns a JSON response that includes information about travel categories available and how frequently each appears in the database.
+  The service returns a JSON response that includes information about travel categories available and how frequently each appears in the database.
 
-      ```javascript
-      {
-        "Museum": 53872,
-        "Park": 34623,
-        "Church": 25515,
-        "Nature/Wildlife": 23060,
-        "Mountain": 10209,
-        "Bridge/Tunnel": 9421,
-        "Memorial": 9343,
-        "Fort": 6475,
-        "Museum/Gallery": 6033,
-        "Castle": 5963,
-        "Library": 5877,
-        "University": 5063,
-        "Family": 4327,
-        "Temple": 4287,
-        "Lake": 3985,
-        "Beach": 3760,
-        "Market": 3297,
-        "History Museum": 3286,
-        "Square": 3130,
-        "Religious": 3018,
-        . . .
-      }
-      ```
-      {: codeblock}
+  ```javascript
+  {
+    "Museum": 53872,
+    "Park": 34623,
+    "Church": 25515,
+    "Nature/Wildlife": 23060,
+    "Mountain": 10209,
+    "Bridge/Tunnel": 9421,
+    "Memorial": 9343,
+    "Fort": 6475,
+    "Museum/Gallery": 6033,
+    "Castle": 5963,
+    "Library": 5877,
+    "University": 5063,
+    "Family": 4327,
+    "Temple": 4287,
+    "Lake": 3985,
+    "Beach": 3760,
+    "Market": 3297,
+    "History Museum": 3286,
+    "Square": 3130,
+    "Religious": 3018,
+    . . .
+  }
+  ```
+  {: codeblock}
 
 1.  From the JSON response above, select any category that you would like to use as a query parameter. Take note of this category so that you can use it for the next step.
 
@@ -141,10 +143,12 @@ The service returns a JSON response that includes information about travel attra
   -   Replace {category_keyword} with the category you selected in step #2.2.
   -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1 above).
 
-    ```bash
-    curl -X GET --header "Accept: application/json" "http://173.193.106.27:31000/attractions?location={latitude},{longitude}&category_keyword={category_keyword}"
-    ```
-    {: pre}
+  ```bash
+  curl -X GET --header \
+  "Accept: application/json" \
+  "http://173.193.106.27:31000/attractions?location={latitude},{longitude}&category_keyword={category_keyword}"
+  ```
+  {: pre}
 
   The service returns a JSON response that includes information about travel attractions found near the location input that was entered, filtered according to the category provided. Below is an example response using "memorial" as {category_keyword}.
 
