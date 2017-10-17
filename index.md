@@ -18,7 +18,7 @@ lastupdated: "2017-09-15"
 {:swift: .ph data-hd-programlang='swift'}
 
 # Getting started tutorial
-The {{site.data.keyword.IBM}} {{site.data.keyword.knowledgekits_full}} are the individual building blocks that can be used to build applications based on parsed and annotated content from the {{site.data.keyword.watsoncontent_short}} team.
+The {{site.data.keyword.ibmwatson}} {{site.data.keyword.knowledgekits_short}} are the individual building blocks that can be used to build applications based on parsed and annotated content from the {{site.data.keyword.watsoncontent_short}} team.
 
 The first kit that we have made available for you to start with is the Travel Knowledge Kit. This service provides information on points of interest and attractions based on location input. 
 
@@ -28,9 +28,9 @@ The following tutorial will help show how you can get started quickly with the s
 
 ## Before you begin
 {: #prereqs}
-You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) and an instance of the {{site.data.keyword.knowledgekits_full_notm}} service.
+You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) and an instance of the {{site.data.keyword.knowledgekits_short}} service.
 
-1.  Go to the [Watson Content Knowledge Kits ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/watson-content-knowledge-kits){: new_window} and either sign up for a free Bluemix account or log in.
+1.  Go to the [Watson Knowledge Kits ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/watson-content-knowledge-kits){: new_window} and either sign up for a free Bluemix account or log in.
 1.  After you login in, click **Create** and you will be taken to the dashboard page for this service instance.
 
 

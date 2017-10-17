@@ -19,7 +19,7 @@ lastupdated: "2017-09-15"
 
 # FAQs
 {: #faqs}
-This section contains answers to some frequently asked questions about The Watson Content Travel Knowledge Kit.
+This section contains answers to some frequently asked questions about {{site.data.keyword.watson}} {{site.data.keyword.knowledgekits_short}}.
 
 If your question is not answered below and help is still needed, please contact the {{site.data.keyword.watsoncontent_short_notm}} team on the  `#blekko-watson` Slack channel.
 
