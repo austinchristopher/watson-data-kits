@@ -22,7 +22,7 @@ The {{site.data.keyword.ibmwatson}} {{site.data.keyword.knowledgekits_short}} ar
 
 The first kit that we have made available for you to start with is the Travel Knowledge Kit. This service provides information on points of interest and attractions based on location input. 
 
-The following tutorial will help show how you can get started quickly with the service. The example below shows how to call the service's GET method on different endpoints with parameters of your choice.
+The following tutorial will help show how you can get started quickly with the service. The steps of the tutorial will walk through examples of endpoints that are exposed, how they can be called, which paramaters are acceptable, and what kinds of responses are expected.
 {: shortdesc}
 
 
@@ -32,15 +32,17 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
 
 1.  Go to the [Watson Knowledge Kits ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/watson-content-knowledge-kits){: new_window} and either sign up for a free Bluemix account or log in.
 1.  After you login in, click **Create** and you will be taken to the dashboard page for this service instance.
+1.  On the sidebar, navigate to **Service credentials** tab and there you will find a table containing the info on service credentials created for your instance. 
+1. Click on the **View credentials** in the ACTIONS column for the credential with the KEY NAME `Credentials-1`. This should expand to show a JSON codeblock. To be able to complete the following tutorial, please note the value for `host` and use in any of the API calls as needed.
 
 
-**Note**: The examples below use cURL to call methods of the HTTP interface. You can install the version of cURL for your operating system from [curl.haxx.se ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://curl.haxx.se/){: new_window}. You must install the version that supports the Secure Sockets Layer (SSL) protocol. Make sure to include the installed binary file on your `PATH` environment variable.
+**Note**: The examples in the bash codeblocks to follow use cURL to call methods of the HTTP interface. You can install the version of cURL for your operating system from [curl.haxx.se ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://curl.haxx.se/){: new_window}. You must install the version that supports the Secure Sockets Layer (SSL) protocol. Make sure to include the installed binary file on your `PATH` environment variable.
 
 
 ## Step 1: Request the default JSON response for any provided location.
 {: #step-1}
 
-1.  Find a pair of `latitude` and `longitude` coordinates (in Decimal Degrees) of any location you would like to test. Below are `latitude` and `longitude` values for San Francisco for your convenience. 
+1.  Find a pair of `latitude` and `longitude` coordinates (in Decimal Degrees) of any location you would like to test. For convenience, here are `latitude` and `longitude` values for San Francisco: 
 
     ```javascript
     { 
@@ -51,16 +53,17 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
     {: codeblock}
 
 1.  Issue the following command to request the default JSON response. The  `Accept` header specifies acceptable meadia types for the response.
-  -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1 above).
+  -   Replace {host} with the host provided in **Service credentials** (See the **Before you begin** section). 
+  -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1).
   
   ```bash
   curl -X GET --header \
   "Accept: application/json" \
-  "http://173.193.106.27:31000/attractions?location={latitude},{longitude}"
+  "http://{host}/attractions?location={latitude},{longitude}"
   ```
   {: pre}
 
-The service returns a JSON response that includes information about travel attractions found near the location input that was entered. Below is an example response using the San Francisco gps coordinates provided above:
+The service returns a JSON response that includes information about travel attractions found near the location input that was entered. The following is an example response using the San Francisco gps coordinates provided in step #1.1:
 
 ```javascript
 [
@@ -104,7 +107,7 @@ The service returns a JSON response that includes information about travel attra
   ```bash
   curl -X GET \
   --header "Accept: application/json" \
-  "http://173.193.106.27:31000/categories"
+  "http://{host}/categories"
   ```
   {: pre}
 
@@ -130,27 +133,26 @@ The service returns a JSON response that includes information about travel attra
     "Beach": 3760,
     "Market": 3297,
     "History Museum": 3286,
-    "Square": 3130,
-    "Religious": 3018,
     . . .
   }
   ```
   {: codeblock}
 
-1.  From the JSON response above, select any category that you would like to use as a query parameter. Take note of this category so that you can use it for the next step.
+1.  From the JSON response in the last step, select any category that you would like to use as a query parameter. Take note of this category so that you can use it for the next step.
 
 1.  Issue the following command to request a JSON response of attractions near a location, filtered by a category of your choosing. 
+  -   Replace {host} with the host provided in **Service credentials** in the **Before you begin** section. 
   -   Replace {category_keyword} with the category you selected in step #2.2.
-  -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1 above).
+  -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1).
 
   ```bash
   curl -X GET --header \
   "Accept: application/json" \
-  "http://173.193.106.27:31000/attractions?location={latitude},{longitude}&category_keyword={category_keyword}"
+  "http://{host}/attractions?location={latitude},{longitude}&category_keyword={category_keyword}"
   ```
   {: pre}
 
-  The service returns a JSON response that includes information about travel attractions found near the location input that was entered, filtered according to the category provided. Below is an example response using "memorial" as {category_keyword}.
+  The service returns a JSON response that includes information about travel attractions found near the location input that was entered, filtered according to the category provided. The following is an example response using "memorial" as {category_keyword}.
 
       ```javascript
       [
