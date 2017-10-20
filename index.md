@@ -33,7 +33,8 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
 1.  Go to the [Watson Knowledge Kits ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/watson-content-knowledge-kits){: new_window} and either sign up for a free Bluemix account or log in.
 1.  After you login in, click **Create** and you will be taken to the dashboard page for this service instance.
 1.  On the sidebar, navigate to **Service credentials** tab and there you will find a table containing the info on service credentials created for your instance. 
-1. Click on the **View credentials** in the ACTIONS column for the credential with the KEY NAME `Credentials-1`. This should expand to show a JSON codeblock. To be able to complete the following tutorial, please note the value for `host` and use in any of the API calls as needed.
+1. Click on the **View credentials** under the Actions column. 
+1. Please note the value provided for `host`. It will be needed for making calls to the API.
 
 
 **Note**: The examples in the bash codeblocks to follow use cURL to call methods of the HTTP interface. You can install the version of cURL for your operating system from [curl.haxx.se ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://curl.haxx.se/){: new_window}. You must install the version that supports the Secure Sockets Layer (SSL) protocol. Make sure to include the installed binary file on your `PATH` environment variable.
@@ -53,8 +54,8 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
     {: codeblock}
 
 1.  Issue the following command to request the default JSON response. The  `Accept` header specifies acceptable meadia types for the response.
-  -   Replace {host} with the host provided in **Service credentials** (See the **Before you begin** section). 
-  -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1).
+  -   Replace `{host}` with the host provided in **Service credentials** (See **Before you begin** section for more). 
+  -   Modify `{latitude}` and `{longitude}` to specify your desired inputs (you can use the values provided in step #1.1).
   
   ```bash
   curl -X GET --header \
@@ -141,9 +142,9 @@ The service returns a JSON response that includes information about travel attra
 1.  From the JSON response in the last step, select any category that you would like to use as a query parameter. Take note of this category so that you can use it for the next step.
 
 1.  Issue the following command to request a JSON response of attractions near a location, filtered by a category of your choosing. 
-  -   Replace {host} with the host provided in **Service credentials** in the **Before you begin** section. 
-  -   Replace {category_keyword} with the category you selected in step #2.2.
-  -   Modify {latitude} and {longitude} to specify your desired inputs (you can use the values provided in step #1.1).
+  -   Replace `{host}` with the host provided in **Service credentials** (See Before you begin** section for more). 
+  -   Replace `{category_keyword}` with the category you selected in step #2.2.
+  -   Modify `{latitude}` and `{longitude}` to specify your desired inputs (you can use the values provided in step #1.1).
 
   ```bash
   curl -X GET --header \
@@ -152,7 +153,7 @@ The service returns a JSON response that includes information about travel attra
   ```
   {: pre}
 
-  The service returns a JSON response that includes information about travel attractions found near the location input that was entered, filtered according to the category provided. The following is an example response using "memorial" as {category_keyword}.
+  The service returns a JSON response that includes information about travel attractions found near the location input that was entered, filtered according to the category provided. The following is an example response using "memorial" as `{category_keyword}`.
 
       ```javascript
       [
