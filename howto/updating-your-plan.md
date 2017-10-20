@@ -36,3 +36,4 @@ To upgrade your plan, complete these steps:
 1.  Click **Plan** from the navigation pane.
    From here, you can see your current plan and other available plan options, and make changes.
 
+For answers to common questions about subscriptions, see the [Managing billing and usage ![External link icon](../../icons/launch-glyph.svg "External link icon")](/docs/pricing/index.html){: new_window}.
