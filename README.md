@@ -44,11 +44,10 @@ Once you have read/write permission, you can deploy through this repo. Merging a
 
 Once deployed, the live docs can be found here:
 
--   Stage
-[console.stage1.bluemix.net/docs/services/knowledge-kits/index.html](console.stage1.bluemix.net/docs/services/knowledge-kits/index.html)
-
+-   Stage 
+console.stage1.bluemix.net/docs/services/knowledge-kits/index.html
 -   Production
-[console.bluemix.net/docs/services/knowledge-kits/index.html](console.bluemix.net/docs/services/knowledge-kits/index.html)
+console.bluemix.net/docs/services/knowledge-kits/index.html
 
 
 
