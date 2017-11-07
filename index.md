@@ -22,7 +22,7 @@ The {{site.data.keyword.ibmwatson}} {{site.data.keyword.knowledgekits_short}} ar
 
 The first kit that we have made available for you to start with is the Travel Knowledge Kit. This service provides information on points of interest and attractions based on location input. 
 
-The following tutorial will help show how you can get started quickly with the service. The steps of the tutorial will walk through examples of endpoints that are exposed, how they can be called, which paramaters are acceptable, and what kinds of responses are expected.
+The following tutorial will help show how you can quickly get started with the service. The steps of the tutorial will walk through examples of endpoints that are exposed, how they can be called, which paramaters are acceptable, and what kinds of responses are expected.
 {: shortdesc}
 
 
@@ -100,10 +100,12 @@ The service returns a JSON response that includes information about travel attra
 ```
 {: codeblock}
 
-## Step 2: Request a JSON response after finding and specifying a category.
+## Step 2: (Optional) Request a JSON response of available categories you may want to specify.
 {: #step-2}
 
-1.  Issue the following command to request a JSON response of the available categories.
+1.  Issue the following command to request a JSON response of the available categories. 
+
+  **Note**: If you would not like to specify a category and only search attractions by name, you may skip this step and go directly to step #3.
 
   ```bash
   curl -X GET \
@@ -139,56 +141,86 @@ The service returns a JSON response that includes information about travel attra
   ```
   {: codeblock}
 
+
+## Step 3: Request a JSON response for attractions based on parameters you .
+{: #step-3}
+
+
 1.  From the JSON response in the last step, select any category that you would like to use as a query parameter. Take note of this category so that you can use it for the next step.
 
 1.  Issue the following command to request a JSON response of attractions near a location, filtered by a category of your choosing. 
   -   Replace `{host}` with the host provided in **Service credentials** (See Before you begin** section for more). 
-  -   Replace `{category_keyword}` with the category you selected in step #2.2.
   -   Modify `{latitude}` and `{longitude}` to specify your desired inputs (you can use the values provided in step #1.1).
+  -   Replace `{attraction_keyword}` with any word you would like to filter attractions by their names with.
+  -   Optional: Replace `{category_keyword}` with a category you selected in step #2.2.
 
   ```bash
   curl -X GET --header \
   "Accept: application/json" \
-  "http://{host}/attractions?location={latitude},{longitude}&category_keyword={category_keyword}"
+  "http://{host}/attractions?location={latitude},{longitude}&attraction_keyword={attraction_keyword}&category_keyword={category_keyword}"
   ```
   {: pre}
 
-  The service returns a JSON response that includes information about travel attractions found near the location input that was entered, filtered according to the category provided. The following is an example response using "memorial" as `{category_keyword}`.
+  The service returns a JSON response that includes information about travel attractions found near the location input that was entered, filtered according to the category provided. The following is an example response using "national" as `{attraction_keyword}` and "park" as `{category_keyword}`.
 
       ```javascript
       [
-       {
-          "address:" {
-              "address_string": "100 Larkin St, San Francisco, CA 94102, USA",
-              "street_number": "100",
+        {
+          "address": {
+              "address_string": "Landmark Building E, San Francisco, CA 94109, USA",
               "county": "San Francisco County",
-              "street": "Larkin Street",
-              "postcode": "94102",
+              "postcode": "94109",
               "city": "San Francisco",
               "country": "United States",
               "state": "California"
           },
           "categories": [
-              "Statue"
+              "Park"
           ],
-          "description": "Double L Excentric Gyratory is a sculpture by American artist George Rickey. There are three editions. One is installed at the intersection of Larking and Fulton streets, outside the Main Library, in San Francisco's Civic Center, in the U.S. state of California. Another is part of the Auckland Art Gallery's International Art Collection. This stainless steel sculpture, dated 1985, measures 7163 x 3543 mm and was gifted by the Edmiston Trust.",
-          "distance_miles": 0.1,
-          "id": "e6c20243-344d-4ceb-b155-82767df62648",
+          "description": "The park consists of a visitor center, Hyde St Pier and the fleet of historic ships moored there, the Maritime Museum, Aquatic Park, and the Municipal Pier.",
+          "distance_miles": 2.2,
+          "id": "e9549ff6-46e6-4cf1-a1fe-9a48ff61a6f2",
           "location": {
-              "lat": 37.7793110683296,
-              "lng": -122.415905136432
+              "lat": 37.806643,
+              "lng": -122.430359
           },
-          "name": "Double L Excentric Gyratory",
-          "phone": "",
-          "rank": 199.638437974817,
-          "url": "",
-          "image_url: https://upload.wikimedia.org/wikipedia/commons/e/ed/Double_L_Excentric_Gyratory_by_George_Rickey%2C_San_Francisco_%282013%29_-_1.JPG",
-          "grouping": "Monument"
-       },
+          "name": "San Francisco Maritime National Historical Park",
+          "phone": "+1 415-447-5000",
+          "rank": 295.457781839106,
+          "url": "http://www.triposo.com/poi/T__c43b2521d3d8",
+          "image_url": ""
+        },
+        {
+          "address": {
+              "address_string": "Rodeo Valley Trail, Sausalito, CA 94965, USA",
+              "county": "Marin County",
+              "street": "Rodeo Valley Trail",
+              "postcode": "94965",
+              "city": "Sausalito",
+              "country": "United States",
+              "state": "California"
+          },
+          "categories": [
+              "Park"
+          ],
+          "description": "It's no mystery why this is one of the Bay Area's most popular hiking and cycling destinations. As the trails wind beside the Pacific Ocean and San Francisco Bay and through the Marin Headlands, they afford stunning views of the sea, the Golden Gate Bridge and the city of San Francisco. ",
+          "distance_miles": 6.1,
+          "id": "900edc61-ea22-483e-82a3-6f5d774ce0dc",
+          "location": {
+              "lat": 37.837174,
+              "lng": -122.51009
+          },
+          "name": "Golden Gate National Recreation Area",
+          "phone": "415-561-4700",
+          "rank": 287.602532640087,
+          "url": "https://www.lonelyplanet.com/a/poi-sig/1371762/361864",
+          "image_url": ""
+        },
           . . .
       ]
       ```
       {: codeblock}
+
 
 <!-- ## Next steps -->
 
