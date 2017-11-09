@@ -60,7 +60,7 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
   ```bash
   curl -X GET --header \
   "Accept: application/json" \
-  "http://{host}/attractions?location={latitude},{longitude}"
+  "http://{host}/v1/attractions?location={latitude},{longitude}"
   ```
   {: pre}
 
@@ -110,7 +110,7 @@ The service returns a JSON response that includes information about travel attra
   ```bash
   curl -X GET \
   --header "Accept: application/json" \
-  "http://{host}/categories"
+  "http://{host}/v1/categories"
   ```
   {: pre}
 
@@ -142,7 +142,7 @@ The service returns a JSON response that includes information about travel attra
   {: codeblock}
 
 
-## Step 3: Request a JSON response for attractions based on parameters you .
+## Step 3: Request a JSON response for attractions with parameters of your choosing.
 {: #step-3}
 
 
@@ -151,17 +151,17 @@ The service returns a JSON response that includes information about travel attra
 1.  Issue the following command to request a JSON response of attractions near a location, filtered by a category of your choosing. 
   -   Replace `{host}` with the host provided in **Service credentials** (See Before you begin** section for more). 
   -   Modify `{latitude}` and `{longitude}` to specify your desired inputs (you can use the values provided in step #1.1).
-  -   Replace `{attraction_keyword}` with any word you would like to filter attractions by their names with.
-  -   Optional: Replace `{category_keyword}` with a category you selected in step #2.2.
+  -   Replace `{attraction}` with any word you would like to filter attractions by their names with.
+  -   Optional: Replace `{category}` with a category you selected in step #2.2.
 
   ```bash
   curl -X GET --header \
   "Accept: application/json" \
-  "http://{host}/attractions?location={latitude},{longitude}&attraction_keyword={attraction_keyword}&category_keyword={category_keyword}"
+  "http://{host}/v1/attractions?location={latitude},{longitude}&attraction={attraction}&category={category}"
   ```
   {: pre}
 
-  The service returns a JSON response that includes information about travel attractions found near the location input that was entered, filtered according to the category provided. The following is an example response using "national" as `{attraction_keyword}` and "park" as `{category_keyword}`.
+  The service returns a JSON response that includes information about travel attractions found near the location input that was entered, filtered according to the category provided. The following is an example response using "national" as `{attraction}` and "park" as `{category}`.
 
       ```javascript
       [
