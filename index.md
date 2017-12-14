@@ -36,18 +36,21 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
 1. Use **New credential** button on this page to create credentials. In creating credentials you can use default settings or provide your own. Click **Add** to continue.
 1. Once you have submitted the form for creating credentials, go to **View credentials** under the Actions column to view your credentials in JSON form. 
 
-
 ***************************************************************************
-Please note and store `apikey`, `Instance-ID`, and `url`. **You will need these to request an Authorization Access Token for access to the API.**
+Please note and store `apikey`, `instance_id`, and `url`. **You will need these to request an Authorization Access Token for access to the API.**
 *****************************************************************************
 
 ## Get Access Token
   1. Issue the following command.
-    -  Replace `{url}` with the url provided in **Service credentials**. 
+    -  Replace `{url}` and `{instance_id}` with the url provided in **Service credentials**. 
     -  Replace `{apikey}` with the API Key provided in **Service credentials**.
    
     ```bash
-    curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json" -d "grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey={apikey}" "https://iam.bluemix.net/identity/token"
+    curl -X POST \
+    -H "Content-Type: application/x-www-form-urlencoded" \
+    -H "Accept: application/json" \
+    -d "grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey={apikey}" \
+    "https://iam.bluemix.net/identity/token" \
     ```
     {: pre}
 
@@ -72,14 +75,15 @@ Please note and store `apikey`, `Instance-ID`, and `url`. **You will need these 
 
 1.  Issue the following command to request the default JSON response. The  `Accept` header specifies acceptable meadia types for the response.
   -   Replace `{access_token}` with the access token you got from the **Get Access Token** section of this page.
-  -   Replace `{url}` with the url provided in **Service credentials** (See **Before you begin** section for more). 
+  -   Replace `{url}` and `{instance_id}` with the url provided in **Service credentials** (See **Before you begin** section for more). 
   -   Modify `{latitude}` and `{longitude}` to specify your desired inputs (you can use the values provided in step #1.1).
   
   ```bash
-  curl -X GET --header \
-  "Authorization: Bearer {access_token}" 
-  "Accept: application/json" \
-  "{url}/travel/v1/attractions?location={latitude},{longitude}"
+  curl -X GET \
+  -H "Authorization: Bearer {access_token}" \
+  -H "Instance-ID: {instance_id}" \
+  -H "Accept: application/json" \
+  "{url}/travel/v1/attractions?location={latitude},{longitude}" \
   ```
   {: pre}
 
@@ -127,9 +131,10 @@ The service returns a JSON response that includes information about travel attra
   **Note**: If you would not like to specify a category and only search attractions by name, you may skip this step and go directly to step #3.
 
   ```bash
-  curl -X GET --header \
-  "Authorization: Bearer {access_token}" \
-  "Accept: application/json" \
+  curl -X GET \
+  -H "Authorization: Bearer {access_token}" \
+  -H "Instance-ID: {instance_id}" \
+  -H "Accept: application/json" \
   "{url}/travel/v1/categories"
   ```
   {: pre}
@@ -170,15 +175,16 @@ The service returns a JSON response that includes information about travel attra
 
 1.  Issue the following command to request a JSON response of attractions near a location, filtered by a category of your choosing. 
   -   Replace `{access_token}` with the access token you got from the **Get Access Token** section of this page.
-  -   Replace `{url}` with the url provided in **Service credentials** (See Before you begin** section for more). 
+  -   Replace `{url}` and `{instance_id}` with the url and instance id you got from **Service credentials** (See Before you begin** section for more). 
   -   Modify `{latitude}` and `{longitude}` to specify your desired inputs (you can use the values provided in step #1.1).
   -   Replace `{attraction}` with any word you would like to filter attractions by their names with.
   -   Optional: Replace `{category}` with a category you selected in step #2.2.
 
   ```bash
-  curl -X GET --header \
-  "Authorization: Bearer {access_token}" \
-  "Accept: application/json" \
+  curl -X GET \
+  -H "Authorization: Bearer {access_token}" \
+  -H "Instance-ID: {instance_id}" \
+  -H "Accept: application/json" \
   "{url}/travel/v1/attractions?location={latitude},{longitude}&attraction={attraction}&category={category}"
   ```
   {: pre}
