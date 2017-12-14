@@ -30,11 +30,28 @@ The following tutorial will help show how you can quickly get started with the s
 {: #prereqs}
 You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) and an instance of the {{site.data.keyword.knowledgekits_short}} service.
 
-1.  Go to the [Watson Knowledge Kits ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/watson-content-knowledge-kits){: new_window} and either sign up for a free Bluemix account or log in.
-1.  After you login in, click **Create** and you will be taken to the dashboard page for this service instance.
-1.  On the sidebar, navigate to **Service credentials** tab and there you will find a table containing the info on service credentials created for your instance. 
-1. Click on the **View credentials** under the Actions column. 
-1. Please note the value provided for `host`. It will be needed for making calls to the API.
+1. Go to the [Watson Knowledge Kits ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/watson-content-knowledge-kits){: new_window} and either sign up for a free Bluemix account or log in.
+1. After you login in, click **Create** and you will be taken to the dashboard page for this service instance.
+1. On the sidebar, navigate to **Service credentials** tab.
+1. Use **New credential** button on this page to create credentials. In creating credentials you can use default settings or provide your own. Click **Add** to continue.
+1. Once you have submitted the form for creating credentials, go to **View credentials** under the Actions column to view your credentials in JSON form. 
+
+
+***************************************************************************
+Please note and store `apikey`, `Instance-ID`, and `url`. **You will need these to request an Authorization Access Token for access to the API.**
+*****************************************************************************
+
+## Get Access Token
+  1. Issue the following command.
+    -  Replace `{url}` with the url provided in **Service credentials**. 
+    -  Replace `{apikey}` with the API Key provided in **Service credentials**.
+   
+    ```bash
+    curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -H "Accept: application/json" -d "grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey={apikey}" "https://iam.bluemix.net/identity/token"
+    ```
+    {: pre}
+
+  1. Save the `access_token`. To Authenticate any request, provide this `access token` in your request headers as a Bearer token.
 
 
 **Note**: The examples in the bash codeblocks to follow use cURL to call methods of the HTTP interface. You can install the version of cURL for your operating system from [curl.haxx.se ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://curl.haxx.se/){: new_window}. You must install the version that supports the Secure Sockets Layer (SSL) protocol. Make sure to include the installed binary file on your `PATH` environment variable.
@@ -54,13 +71,15 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
     {: codeblock}
 
 1.  Issue the following command to request the default JSON response. The  `Accept` header specifies acceptable meadia types for the response.
-  -   Replace `{host}` with the host provided in **Service credentials** (See **Before you begin** section for more). 
+  -   Replace `{access_token}` with the access token you got from the **Get Access Token** section of this page.
+  -   Replace `{url}` with the url provided in **Service credentials** (See **Before you begin** section for more). 
   -   Modify `{latitude}` and `{longitude}` to specify your desired inputs (you can use the values provided in step #1.1).
   
   ```bash
   curl -X GET --header \
+  "Authorization: Bearer {access_token}" 
   "Accept: application/json" \
-  "http://{host}/v1/attractions?location={latitude},{longitude}"
+  "{url}/travel/v1/attractions?location={latitude},{longitude}"
   ```
   {: pre}
 
@@ -108,9 +127,10 @@ The service returns a JSON response that includes information about travel attra
   **Note**: If you would not like to specify a category and only search attractions by name, you may skip this step and go directly to step #3.
 
   ```bash
-  curl -X GET \
-  --header "Accept: application/json" \
-  "http://{host}/v1/categories"
+  curl -X GET --header \
+  "Authorization: Bearer {access_token}" \
+  "Accept: application/json" \
+  "{url}/travel/v1/categories"
   ```
   {: pre}
 
@@ -149,15 +169,17 @@ The service returns a JSON response that includes information about travel attra
 1.  From the JSON response in the last step, select any category that you would like to use as a query parameter. Take note of this category so that you can use it for the next step.
 
 1.  Issue the following command to request a JSON response of attractions near a location, filtered by a category of your choosing. 
-  -   Replace `{host}` with the host provided in **Service credentials** (See Before you begin** section for more). 
+  -   Replace `{access_token}` with the access token you got from the **Get Access Token** section of this page.
+  -   Replace `{url}` with the url provided in **Service credentials** (See Before you begin** section for more). 
   -   Modify `{latitude}` and `{longitude}` to specify your desired inputs (you can use the values provided in step #1.1).
   -   Replace `{attraction}` with any word you would like to filter attractions by their names with.
   -   Optional: Replace `{category}` with a category you selected in step #2.2.
 
   ```bash
   curl -X GET --header \
+  "Authorization: Bearer {access_token}" \
   "Accept: application/json" \
-  "http://{host}/v1/attractions?location={latitude},{longitude}&attraction={attraction}&category={category}"
+  "{url}/travel/v1/attractions?location={latitude},{longitude}&attraction={attraction}&category={category}"
   ```
   {: pre}
 
