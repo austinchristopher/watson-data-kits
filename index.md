@@ -42,7 +42,7 @@ Please note and store `apikey`, `instance_id`, and `url`. **You will need these 
 
 ## Get Access Token
   1. Issue the following command.
-    -  Replace `{url}` and `{instance_id}` with the url provided in **Service credentials**. 
+    -  Replace `{url}` and `{instance_id}` with the url and instance id provided in **Service credentials**. 
     -  Replace `{apikey}` with the API Key provided in **Service credentials**.
    
     ```bash
@@ -75,7 +75,7 @@ Please note and store `apikey`, `instance_id`, and `url`. **You will need these 
 
 1.  Issue the following command to request the default JSON response. The  `Accept` header specifies acceptable meadia types for the response.
   -   Replace `{access_token}` with the access token you got from the **Get Access Token** section of this page.
-  -   Replace `{url}` and `{instance_id}` with the url provided in **Service credentials** (See **Before you begin** section for more). 
+  -   Replace `{url}` and `{instance_id}` with the url and instance id provided in **Service credentials** (See **Before you begin** section for more). 
   -   Modify `{latitude}` and `{longitude}` to specify your desired inputs (you can use the values provided in step #1.1).
   
   ```bash
@@ -175,7 +175,7 @@ The service returns a JSON response that includes information about travel attra
 
 1.  Issue the following command to request a JSON response of attractions near a location, filtered by a category of your choosing. 
   -   Replace `{access_token}` with the access token you got from the **Get Access Token** section of this page.
-  -   Replace `{url}` and `{instance_id}` with the url and instance id you got from **Service credentials** (See Before you begin** section for more). 
+  -   Replace `{url}` and `{instance_id}` with the url and instance id provided in **Service credentials** (See Before you begin** section for more). 
   -   Modify `{latitude}` and `{longitude}` to specify your desired inputs (you can use the values provided in step #1.1).
   -   Replace `{attraction}` with any word you would like to filter attractions by their names with.
   -   Optional: Replace `{category}` with a category you selected in step #2.2.
