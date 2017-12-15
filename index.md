@@ -34,13 +34,21 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
 1. After you login in, click **Create** and you will be taken to the dashboard page for this service instance.
 1. On the sidebar, navigate to **Service credentials** tab.
 1. Use **New credential** button on this page to create credentials. In creating credentials you can use default settings or provide your own. Click **Add** to continue.
-1. Once you have submitted the form for creating credentials, go to **View credentials** under the Actions column to view your credentials in JSON form. 
+1. Once you have submitted the form for creating credentials, go to **View credentials** under the Actions column to view your credentials in JSON form.
+1. Please note and store `apikey`, `instance_id`, and `url`. You will need `apikey` to request an Authorization Access Token for access to the API. You will need `instance_id` and `url` to make API calls. 
 
 ***************************************************************************
-Please note and store `apikey`, `instance_id`, and `url`. **You will need these to request an Authorization Access Token for access to the API.**
-*****************************************************************************
 
-## Get Access Token
+<center>Please note and store `apikey`, `instance_id`, and `url`. </center>
+
+*****************************************************************************
+<br>
+
+**Note**: The examples in the bash codeblocks to follow use cURL to call methods of the HTTP interface. You can install the version of cURL for your operating system from [curl.haxx.se ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://curl.haxx.se/){: new_window}. You must install the version that supports the Secure Sockets Layer (SSL) protocol. Make sure to include the installed binary file on your `PATH` environment variable.
+  
+<br>
+
+### Get Access Token
   1. Issue the following command.
     -  Replace `{url}` and `{instance_id}` with the url and instance id provided in **Service credentials**. 
     -  Replace `{apikey}` with the API Key provided in **Service credentials**.
@@ -56,8 +64,11 @@ Please note and store `apikey`, `instance_id`, and `url`. **You will need these 
 
   1. Save the `access_token`. To Authenticate any request, provide this `access token` in your request headers as a Bearer token.
 
+*******************************************************************************
 
-**Note**: The examples in the bash codeblocks to follow use cURL to call methods of the HTTP interface. You can install the version of cURL for your operating system from [curl.haxx.se ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://curl.haxx.se/){: new_window}. You must install the version that supports the Secure Sockets Layer (SSL) protocol. Make sure to include the installed binary file on your `PATH` environment variable.
+<center>Please note and store `access_token`. </center>
+
+*******************************************************************************
 
 
 ## Step 1: Request the default JSON response for any provided location.
