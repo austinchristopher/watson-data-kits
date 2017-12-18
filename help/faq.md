@@ -35,7 +35,7 @@ If your question is not answered in this section and help is still needed, pleas
 
 ## What does the Travel Knowledge Kit offer?
 {: #travelkit}
-The Travel Knowledge Kit provides access to the details, images, and positions of attractions around the world. Information on an attraction can be organized by category and combined with data on the country (languages, visa requirements, currency, electricity availability, population, time zone, and so on) an attraction belongs to or is associated with.
+The Travel Knowledge Kit provides access to location, description, images, and additional details of POI's around the world. Information on an attraction can be organized by category and combined with data on the country (languages, visa requirements, currency, electricity availability, population, time zone, and so on) an attraction belongs to or is associated with.
 
 
 ## How much does it cost to use the {{site.data.keyword.knowledgekits_short}} service?
