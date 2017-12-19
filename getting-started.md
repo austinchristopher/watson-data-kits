@@ -37,7 +37,7 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
 1. Once you have submitted the form for creating credentials, go to **View credentials** under the Actions column to view your credentials in JSON form.
 1. Please note and store `apikey`, `instance_id`, and `url`. You will need `apikey` to request an Authorization Access Token for access to the API. You will need `instance_id` and `url` to make API calls. 
 
-<center>Please note and store `apikey`, `instance_id`, and `url`. </center>
+Please note and store `apikey`, `instance_id`, and `url`.
 {: tip}
 
 **Note**:The examples in the bash codeblocks to follow use cURL to call methods of the HTTP interface. You can install the version of cURL for your operating system from [curl.haxx.se ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://curl.haxx.se/){: new_window}. You must install the version that supports the Secure Sockets Layer (SSL) protocol. Make sure to include the installed binary file on your `PATH` environment variable.
@@ -60,7 +60,7 @@ You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) an
 
 1. Save the `access_token`. To Authenticate any request, provide this `access token` in your request headers as a Bearer token.
 
-<center>Please note and store `access_token`. </center>
+Please note and store `access_token`.
 {: tip}
 
 

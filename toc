@@ -1,11 +1,11 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="knowledge-kits" audience="service" href="/docs/services/knowledge-kits/index.html"}
+{: .toc subcollection="knowledge-kits" audience="service" href="/docs/services/knowledge-kits/getting-started.html"}
 Knowledge Kits
 
     {: .navgroup id="learn"}
-    index.md
+    getting-started.md
     learn/overview.md
     {: .navgroup-end}
 
