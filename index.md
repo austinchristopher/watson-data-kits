@@ -28,6 +28,10 @@ The following tutorial will help show how you can quickly get started with the s
 
 ## Before you begin
 {: #prereqs}
+
+If you already know the credentials for your {{site.data.keyword.knowledgekits_short}} service instance, skip this step.
+{: tip}
+
 You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) and an instance of the {{site.data.keyword.knowledgekits_short}} service.
 
 1. Go to the [Watson Knowledge Kits ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/watson-content-knowledge-kits){: new_window} and either sign up for a free Bluemix account or log in.
