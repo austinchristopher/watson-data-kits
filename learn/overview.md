@@ -18,9 +18,9 @@ lastupdated: "2017-10-20"
 {:swift: .ph data-hd-programlang='swift'}
 
 # Overview
-{{site.data.keyword.ibmwatson}} {{site.data.keyword.knowledgekits_short}} will enable developers to quickly infuse cognitive capabilities into their apps without spending too much time acquiring, cleansing, and training content. 
+{{site.data.keyword.watsondatakits_short}} will enable developers to quickly infuse cognitive capabilities into their apps without spending too much time acquiring, cleansing, and training content. 
 
-The aim of this service is to make it easier to build cognitive apps through {{site.data.keyword.watson}} {{site.data.keyword.knowledgekits_short}} – pretrained content from different industries and domains offered as API’s for easy integration into a cognitive solution.
+The aim of this service is to make it easier to build cognitive apps through {{site.data.keyword.watsondatakits_short}} – pretrained content from different industries and domains offered as API’s for easy integration into a cognitive solution.
 {: shortdesc}
 
 

@@ -1,4 +1,4 @@
-### Bluemix Docs for Knowledge Kits
+### Bluemix Docs for Watson Data Kits
 
 #### Development
 The documentation building process at its core relies on a Markdown-to-HTML generator used by Bluemix based on npm package called [marked-it-cli](https://www.npmjs.com/package/marked-it-cli) and Bluemix-specific extensions to that package. 
@@ -45,9 +45,9 @@ Once you have read/write permission, you can deploy through this repo. Merging a
 Once deployed, the live docs can be found here:
 
 -   Stage 
-https://console.stage1.bluemix.net/docs/services/knowledge-kits/index.html
+https://console.stage1.bluemix.net/docs/services/watson-data-kits/index.html
 -   Production
-https://console.bluemix.net/docs/services/knowledge-kits/index.html
+https://console.bluemix.net/docs/services/watson-data-kits/index.html
 
 
 

@@ -20,7 +20,7 @@ lastupdated: "2017-10-20"
 # Upgrading your plan
 {: #plan-upgrade}
 
-You can explore the {{site.data.keyword.knowledgekits_short}} extensively on the Free plan, however be aware that there are limitations. Depending on the type or scale of the application you are looking to support, you may consider upgrading the plan you are enrolled in for this service.
+You can explore the {{site.data.keyword.watsondatakits_short}} extensively on the Free plan, however be aware that there are limitations. Depending on the type or scale of the application you are looking to support, you may consider upgrading the plan you are enrolled in for this service.
 {: shortdesc}
 
 ## API call limits

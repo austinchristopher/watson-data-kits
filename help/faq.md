@@ -19,18 +19,18 @@ lastupdated: "2017-10-20"
 
 # FAQs
 {: #faqs}
-This section contains answers to some frequently asked questions about {{site.data.keyword.watson}} {{site.data.keyword.knowledgekits_short}}.
+This section contains answers to some frequently asked questions about {{site.data.keyword.watsondatakits_short}}.
 
 If your question is not answered in this section and help is still needed, please contact the {{site.data.keyword.watsoncontent_short_notm}} team on the  `#blekko-watson` Slack channel.
 
 
-## What are {{site.data.keyword.knowledgekits_short}}?
+## What are {{site.data.keyword.watsondatakits_short}}?
 {: #knowledgekits}
-{{site.data.keyword.knowledgekits_short}} are the individual building blocks that can be used to build applications based on parsed and annotated content from the Watson Content team.
+{{site.data.keyword.watsondatakits_short}} are the individual building blocks that can be used to build applications based on parsed and annotated content from the Watson Content team.
 
 
-## What are {{site.data.keyword.knowledgekits_short}} they for?
-{{site.data.keyword.knowledgekits_short}} can be used to support cognitive systems, train models, and to plug directly into internal and external apps.
+## What are {{site.data.keyword.watsondatakits_short}} they for?
+{{site.data.keyword.watsondatakits_short}} can be used to support cognitive systems, train models, and to plug directly into internal and external apps.
 
 
 ## What does the Travel Knowledge Kit offer?
@@ -38,9 +38,9 @@ If your question is not answered in this section and help is still needed, pleas
 The Travel Knowledge Kit provides access to location, description, images, and additional details of POI's around the world. Information on an attraction can be organized by category and combined with data on the country (languages, visa requirements, currency, electricity availability, population, time zone, and so on) an attraction belongs to or is associated with.
 
 
-## How much does it cost to use the {{site.data.keyword.knowledgekits_short}} service?
+## How much does it cost to use the {{site.data.keyword.watsondatakits_short}} service?
 
-You can explore {{site.data.keyword.knowledgekits_short}} extensively on the Free plan, however be aware that there are limitations.
+You can explore {{site.data.keyword.watsondatakits_short}} extensively on the Free plan, however be aware that there are limitations.
 
 <!-- ## What are the limits on the number of calls for each plan?  -->
 
@@ -54,7 +54,7 @@ To upgrade your plan, complete these steps:
 
 <!-- ## How do you secure your service?
 
-## Can I cache data from the APIs offered through {{site.data.keyword.knowledgekits_short}}?
+## Can I cache data from the APIs offered through {{site.data.keyword.watsondatakits_short}}?
 
 ## How do I ask questions and provide feedback?
 If you experience issues with the service or getting started instructions, you can get help by searching for information or by asking a question in our [IBM developerWorks Answers forum](https://developer.ibm.com/answers/topics/travel-knowledge-kit/?smartspace=bluemix){:new_window}. 

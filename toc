@@ -1,8 +1,8 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="knowledge-kits" audience="service" href="/docs/services/knowledge-kits/index.html"}
-Knowledge Kits
+{: .toc subcollection="watson-data-kits" audience="service" href="/docs/services/watson-data-kits/index.html"}
+Watson Data Kits
 
     {: .navgroup id="learn"}
     index.md

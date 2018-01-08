@@ -1,3 +1,5 @@
+# General
+
 #IBM®
 {{site.data.keyword.IBM}}
 #IBM
@@ -14,11 +16,8 @@
 {{site.data.keyword.ibmwatson_notm}}
 #Watson
 {{site.data.keyword.watson}}
-#IBM Watson™ Knowledge Kits
-{{site.data.keyword.ibmwatson}} {{site.data.keyword.knowledgekits_short}}
-#Knowledge Kits
-{{site.data.keyword.knowledgekits_short}}
 
+# Offering Group 
 
 #IBM Watson™ Content
 {{site.data.keyword.watsoncontent_full}}
@@ -28,7 +27,25 @@
 {{site.data.keyword.watsoncontent_short}}
 #Watson Content
 {{site.data.keyword.watsoncontent_short_notm}}
+
+# Offering
+
+#IBM® Watson™ Data Kits
+{{site.data.keyword.watsondatakits_full}}
+#IBM Watson Data Kits
+{{site.data.keyword.watsondatakits_full_notm}}
+#Watson™ Data Kits
+{{site.data.keyword.watsondatakits_short}}
+#Watson Data Kits
+{{site.data.keyword.watsondatakits_short_notm}}
+
+
+<!-- 
+REMOVED
 #Watson™ Content Knowledge Kits
 {{site.data.keyword.knowledgekits_full}}
+#Watson Content Knowledge Kits
+{{site.data.keyword.knowledgekits_full_notm}}
 #Watson Knowledge Kits
-{{site.data.keyword.knowledgekits_short}}
+{{site.data.keyword.knowledgekits_short}} 
+-->

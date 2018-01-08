@@ -18,9 +18,9 @@ lastupdated: "2017-10-20"
 {:swift: .ph data-hd-programlang='swift'}
 
 # Getting started tutorial
-The {{site.data.keyword.ibmwatson}} {{site.data.keyword.knowledgekits_short}} are the individual building blocks that can be used to build applications based on parsed and annotated content from the {{site.data.keyword.watsoncontent_short}} team.
+The {{site.data.keyword.watsondatakits_full}} are the individual building blocks that can be used to build applications based on parsed and annotated content from the {{site.data.keyword.watsoncontent_short}} team.
 
-The first kit that we have made available for you to start with is the Travel Knowledge Kit. This service provides information on points of interest and attractions based on location input. 
+The first kit that we have made available for you to start with is the Data Kit for Travel Points of Interest (POI). This service provides information on points of interest and attractions based on location input. 
 
 The following tutorial will help show how you can quickly get started with the service. The steps of the tutorial will walk through examples of endpoints that are exposed, how they can be called, which paramaters are acceptable, and what kinds of responses are expected.
 {: shortdesc}
@@ -29,10 +29,10 @@ The following tutorial will help show how you can quickly get started with the s
 ## Before you begin
 {: #prereqs}
 
-If you already know the credentials for your {{site.data.keyword.knowledgekits_short}} service instance, skip this step.
+If you already know the credentials for your {{site.data.keyword.watsondatakits_short}} service instance, skip this step.
 {: tip}
 
-You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) and an instance of the {{site.data.keyword.knowledgekits_short}} service.
+You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) and an instance of the {{site.data.keyword.watsondatakits_short}} service.
 
 1. Go to the [Watson Knowledge Kits ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/watson-content-knowledge-kits){: new_window} and either sign up for a free Bluemix account or log in.
 1. After you login in, click **Create** and you will be taken to the dashboard page for this service instance.
@@ -260,4 +260,4 @@ The service returns a JSON response that includes information about travel attra
 
 <!-- ## Next steps -->
 
-<!-- -   Interact with the API in the [API explorer ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.stage1.bluemix.net/apidocs/1461-watson-content-travel-knowledge-kit){: new_window}. -->
+<!-- -   Interact with the API in the [API explorer ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.stage1.bluemix.net/apidocs/....................){: new_window}. -->
