@@ -24,6 +24,6 @@ The aim of this service is to make it easier to build cognitive apps through {{s
 {: shortdesc}
 
 
-## The Travel Knowledge Kit
-The Travel Knowledge Kit provides an application programming interface (API) that enables developers to leverage structured data on common travel attractions around the world to offer more meaningful choices in the context of an application. This API can be used foundationally, as the core of a new application, or to augment the offering of an existing application. 
+## The {{site.data.keyword.watsondatakits_short}} for Travel POI
+The {{site.data.keyword.watsondatakits_short}} for Travel Point of Interest (POI) provides an application programming interface (API) that enables developers to leverage structured data on common travel attractions around the world to offer more meaningful choices in the context of an application. This API can be used foundationally, as the core of a new application, or to augment the offering of an existing application. 
 {: shortdesc}
