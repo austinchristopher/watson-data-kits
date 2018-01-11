@@ -34,7 +34,7 @@ If you already know the credentials for your {{site.data.keyword.watsondatakits_
 
 You'll need a [Bluemix account](https://console.ng.bluemix.net/registration/) and an instance of the {{site.data.keyword.watsondatakits_short}} service.
 
-1. Go to the [Watson Knowledge Kits ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/watson-content-knowledge-kits){: new_window} and either sign up for a free Bluemix account or log in.
+1. Go to the [Watson Data Kits ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/watson-content-knowledge-kits){: new_window} and either sign up for a free Bluemix account or log in.
 1. After you login in, click **Create** and you will be taken to the dashboard page for this service instance.
 1. On the sidebar, navigate to **Service credentials** tab.
 1. Use **New credential** button on this page to create credentials. In creating credentials you can use default settings or provide your own. Click **Add** to continue.
@@ -260,4 +260,4 @@ The service returns a JSON response that includes information about travel attra
 
 <!-- ## Next steps -->
 
-<!-- -   Interact with the API in the [API explorer ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.stage1.bluemix.net/apidocs/....................){: new_window}. -->
+<!-- -   Interact with the API in the [API explorer ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/apidocs/....................){: new_window}. -->
