@@ -59,7 +59,7 @@ Please note and store `apikey`, `instance_id`, and `url`.
   -H "Content-Type: application/x-www-form-urlencoded" \
   -H "Accept: application/json" \
   -d "grant_type=urn:ibm:params:oauth:grant-type:apikey&apikey={apikey}" \
-  "https://iam.stage1.bluemix.net/identity/token" \
+  "https://iam.bluemix.net/identity/token" \
   ```
   {: pre}
 
